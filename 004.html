@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#action').click(function () {
+                //第1种方式
+                //$('.msg').html('');
+                //第二
+                $('.msg').hide('slow');
+            });
+            $('#action1').click(function () {
+                $('.msg').show('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="msg">ggfdgsdfgsdfgsdfg</div>
+<a href="#" id="action">隐藏</a>
+<a href="#" id="action1">显示</a>
+</body>
+</html>

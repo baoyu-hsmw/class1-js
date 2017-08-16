@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script>
+        $(function () {
+            $('#register_form').submit(function () {
+                alert('aaaaa');
+                return false; //阻止表单提交
+            });
+        });
+    </script>
+</head>
+<body>
+
+<form action="register.php" method="post" id="register_form">
+    username: <input/>
+    <input type="submit" value="注册"/>
+</form>
+
+</body>
+</html>
